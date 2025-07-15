@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>세균과 바이러스 퀴즈</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+  <div id="start-screen">
+    <h1>세균과 바이러스 퀴즈</h1>
+    <p>학번과 이름을 입력하세요 (예: 10101홍길동)</p>
+    <input type="text" id="student-info" placeholder="10101홍길동" />
+    <button id="start-button">시작하기</button>
+  </div>
+
+  <div id="quiz" style="display:none;">
+    <div id="top-bar">
+      <div id="timer">남은 시간: 60초</div>
+      <div id="score-indicator">맞힌 문제 수: 0 / 10</div>
+    </div>
+    <div id="question"></div>
+  </div>
+
+  <div id="buttons" style="display:none;"></div>
+  <div id="result" style="display:none;"></div>
+</body>
+</html>
